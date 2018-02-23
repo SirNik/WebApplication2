@@ -24,16 +24,19 @@ namespace WebApplication1
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseDefaultFiles();
             app.UseStaticFiles();
             app.Run(async (context) =>
             {
-                if(context.Request.Path.Value.Contains("Vasya"))
+                if (context.Request.Path.Value.Contains("Vasya"))
                 {
                     await context.Response.WriteAsync("Hy, Vasya Pidooorast!");
                 }
                 else
                 await context.Response.WriteAsync("Hello darts!");
+                
             });
+            
         }
     }
 }
