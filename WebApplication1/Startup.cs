@@ -32,7 +32,7 @@ namespace WebApplication1
                     await context.Response.WriteAsync("Hy, Vasya Pidooorast!");
                 }
                 else
-                await context.Response.WriteAsync("Hello Swap!");
+                await context.Response.WriteAsync("Hello Sara!");
             });
         }
     }
